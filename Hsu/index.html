@@ -1,12 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".darkmode").click(function(){
+        $("body").toggleClass('clicked');
+      })
+    })
+  </script>
+  <link rel="icon" href="" />
+  <title>Interior Design Studio</title>
 </head>
+
 <body>
-  <h1>Hello Amat</h1>
-  <p>m khant tr</p>
+  <div class="wrapper">
+    <div class="intro-section-blk">
+      <header class="inner-blk">
+        <!-- Navigation Block -->
+        <div class="nav-blk clearfix">
+          <div class="fl-blk">
+            <h1><img src="img/img_header_logo.png" alt="Logo" /></h1>
+          </div>
+          <!-- .logo -->
+          <div class="fr-blk">
+            <ul class="navlist">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">services</a></li>
+              <li><a href="#">blog</a></li>
+              <li><a href="#">contact</a></li>
+              <li class="btn-signin"><a href="#">sign in</a></li>
+              <li><a href="#" class="darkmode">Dark</a></li>
+              <a href="javascript:void(0);" class="icon" onclick="">
+                <i class="fa fa-bars"></i>
+              </a>
+            </ul>
+          </div>
+        </div>
+        <!-- .nav-blk,  .nav-list -->
+
+        <div class="intro-blk">
+          <h2 class="cmm-section-txt">
+            interior Design <br />
+            studio
+          </h2>
+          <hr class="cmm-line" />
+          <h3>building beautiful spaces</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero at
+            debitis voluptatibus sint. Accusamus id voluptates quasi numquam
+            nostrum magnam quaerat aspernatur rem consequuntur? Voluptate
+            alias possimus nam beatae eius?
+          </p>
+          <div class="btn-group">
+            <ul>
+              <li><a href="#">sign in</a></li>
+              <li><a href="#">read more</a></li>
+            </ul>
+          </div>
+          <div class="intro-img-blk clearfix">
+            <div class="fl-blk">
+              <!--<img src="img/img_lamp.png" alt="">-->
+              <img src="img/img_chair.png" alt="Chair" />
+            </div>
+            <div class="fr-blk">
+              <img src="img/img_plant.png" alt="Indoor Plant" />
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <!-- intro-section-blk -->
+    <div class="history-section-blk">
+      <div class="inner-blk-bgwhite">
+        <ul class="history-list clearfix">
+          <li>
+            <h2>+850</h2>
+            <p>Property Build</p>
+          </li>
+
+          <li>
+            <h2>+30</h2>
+            <p>Award Gained</p>
+          </li>
+
+          <li>
+            <h2>+850</h2>
+            <p>Years Experience</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- history-section-blk -->
+
+    <div class="service-section-blk">
+      <div class="inner-blk">
+        <h2 class="cmm-section-txt">Our Services</h2>
+        <p class="cmm-para">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus
+          officia ipsum voluptatum architecto suscipit
+        </p>
+
+        <ul class="service-list clearfix">
+          <li class="service-item">
+            <img src="img/img_service1.png" alt="Service01">
+            <h3 class="sitem-txt">Lorem ipsum dolor sit</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, dignissimos</p>
+            <a href="#">Read More</a>
+          </li>
+          <li class="service-item">
+            <img src="img/img_service1.png" alt="Service01">
+            <h3 class="sitem-txt">Lorem ipsum dolor sit</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, dignissimos</p>
+            <a href="#">Read More</a>
+          </li>
+          <li class="service-item">
+            <img src="img/img_service1.png" alt="Service01">
+            <h3 class="sitem-txt">Lorem ipsum dolor sit</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, dignissimos</p>
+            <a href="#">Read More</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- .service-section-blk -->
+
+    <div class="subscribe-section-blk">
+      <div class="inner-blk">
+          <div class="subscribe-blk clearfix">
+            <div class="fl-blk">
+              <img src="img/img_frame.png" alt="Frame">
+            </div>
+
+            <div class="fr-blk">
+              <h2>Subscribe to our newsletter</h2>
+
+              <form action="" class="frm-subscribe">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Email">
+                <textarea name="message" id="message" placeholder="Message"></textarea>
+              </form>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>

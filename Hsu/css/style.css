@@ -1,0 +1,271 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "TenorSans";
+  src: url(../fonts/Tenor_Sans/TenorSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url(../fonts/Open_Sans/static/OpenSans-Bold.ttf);
+}
+
+.clearfix::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+body {
+  font-family: "OpenSans";
+  font-size: 15px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+.intro-section-blk,.service-section-blk,
+.subscribe-section-blk {
+  background-color: #e0d4bd;
+}
+.inner-blk,.inner-blk-bgwhite{
+  width: 960px;
+  margin: 0 auto;
+}
+.inner-blk {
+  background-color: #e0d4bd;
+}
+.inner-blk-bgwhite{
+  margin: 0 auto;
+}
+a {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.cmm-section-txt,
+.sitem-txt,
+.history-list li p {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cmm-section-txt {
+  color: #976a4e;
+  font-family: "TenorSans";
+  font-size: 47.82px;
+}
+
+.cmm-line {
+  width: 20%;
+  margin-top: 37px;
+  margin-bottom: 37px;
+  border: 1px solid #976a4e;
+}
+
+.cmm-para {
+  padding: 0 30%;
+  text-align: center;
+  opacity: 0.8;
+}
+
+/*************** navigation block ****************/
+.nav-blk {
+  margin-bottom: 138px;
+ line-height: 3;
+}
+
+.fl-blk {
+  float: left;
+}
+.fl-blk h1 img{
+margin-top: 10%;
+}
+.fr-blk {
+  float: right;
+}
+
+.fr-blk .navlist li,
+.btn-group ul li {
+  float: left;
+  margin-right: 35px;
+  padding: 10px;
+  opacity: 0.8;
+  border-radius: 0.5rem;
+}
+
+.fr-blk .navlist li:hover,
+.btn-group ul li:hover {
+  background-color: #976a4e;
+  color: #fff;
+}
+
+.intro-blk p {
+  margin-bottom: 45px;
+  padding: 0 30%;
+  opacity: 0.8;
+}
+
+.intro-blk p,
+.intro-blk h3 {
+  color: #3e3e3e;
+  font-family: "OpenSans";
+  text-align: center;
+}
+
+.intro-blk h3 {
+  margin-bottom: 32px;
+  font-size: 22.95px;
+  text-transform: uppercase;
+}
+
+.btn-group {
+  margin-left: 40%;
+}
+
+.intro-img-blk {
+  margin-top: 14%;
+}
+
+.intro-img-blk .fr-blk img {
+  margin-top: -160%;
+  max-width: 242px;
+}
+
+.intro-img-blk .fl-blk img {
+  margin-top: -100%;
+  max-width: 300px;
+}
+
+/*************** History Block ***************/
+.history-section-blk {
+  line-height: 3;
+  background-color: #fff;
+}
+
+.history-list li {
+  float: left;
+  margin-right: 282px;
+  text-transform: uppercase;
+}
+
+.history-list li:last-child,
+.service-list li:last-child {
+  margin-right: 0;
+}
+
+.history-list li h2 {
+  line-height: 1.5;
+  font-family: "TenorSans";
+  font-size: 52.39px;
+  text-align: center;
+}
+
+/************* Service Section Block ****************/
+.service-section-blk h2{
+line-height: 3;
+}
+.service-list {
+  width: 100%;
+  margin-top: 83px;
+}
+
+.service-list li {
+  float: left;
+  margin-right: 45px;
+  line-height: 2;
+}
+
+.service-list .service-item img {
+  width: 75%;
+  margin-bottom: 40px;
+  margin-left: 12%;
+}
+
+.sitem-txt {
+  color: #976a4e;
+  font-size: 20.83px;
+}
+.service-item,
+.service-item a,
+.history-list li{
+  transition: all 0.5s ease-out;
+}
+.service-item p{
+  width: 200px;
+  line-height: 1;
+  margin-left: 14%;
+  font-size: 15.21px;
+  text-align: center;
+  opacity: 0.8;
+}
+.service-item a{
+  padding: 8px 12px;
+  line-height: 5;
+  margin-left: 80px;
+  border: 1px solid #976a4e;
+  border-radius: 1.5rem;
+}
+.service-item a:hover{
+  background-color: #fff;
+}
+/************ Responsive Design ***************/
+@media screen and (max-width:768px) and (max-width:1024px) {
+  .history-list li{
+    width: 100%; 
+    margin-top: 5%;
+    color: rgba(0, 0, 0,0.8);
+  }
+  .history-list li:first-child{
+    margin-top: 0;
+  }
+  .history-list li:hover,
+  .service-list .service-item:hover
+  {
+    background-color: rgba(151, 106, 78,0.5);
+  }
+  .navlist {
+    display: none;
+  }
+  .service-list .service-item{
+    width: 100%;
+    padding-top: 5%;
+  }
+  .service-list .service-item img{
+    width: 30%;
+    margin-left: 34%;
+  }
+  .service-list .service-item p{
+    margin-left: 39%;
+
+  }
+  .service-list .service-item a{
+    margin-left: 43.5%;
+    margin-bottom: 3%;
+  }
+}
+
+ 
+ 	
+@media screen and (max-width:767.9px) {
+  .nav-blk{
+    margin-bottom: 5%;
+  }
+  .inner-blk{
+    padding: 5px 0;
+  }
+  .cmm-section-txt{
+    font-size: 2rem;
+  }
+  .intro-img-blk{
+    display: none;
+  }
+  .btn-group{
+    margin-bottom: 100px;
+  }
+}
